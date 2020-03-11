@@ -1,6 +1,6 @@
 # Angular ToDo Application
 
-![Demo](Demo.GIF)
+![Demo](Demo.gif)
 
 ###  Specifications:
 * Build a todo list single page application.
