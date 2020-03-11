@@ -3,10 +3,8 @@
 ![Demo](Demo.gif)
 
 ###  Specifications:
-* Build a todo list single page application.
 * Add/Edit/Delete todo items
-* Mark todo item as done
-* Ability to filter items in the todo list
+* Move todo items to different working columns
 
 ### Quick start
 
