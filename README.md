@@ -1,5 +1,3 @@
-# Angular ToDo Application
-
 ![Demo](Demo.gif)
 
 ###  Specifications:
