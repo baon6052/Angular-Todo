@@ -1,0 +1,28 @@
+<div class="column">
+
+    <div class="column-title">
+        {{ name }}
+    </div>
+
+    <div class="card-container"
+      [ngClass]="{'highlighted': highlighted}"
+
+        cdkDropList
+        id = {{category}}
+        [cdkDropListData]="cards"
+        (cdkDropListEntered)="highlight(true)"
+        (cdkDropListExited)="highlight(false)"
+        (cdkDropListDropped)="drop($event);highlight(false)">
+
+        <div *ngIf="cards == 0" class="no-cards-filler">
+            <img class="no-task-icon" src ="../../../assets/icons/no-tasks-sad-face.svg">
+            <p class="no-tasks-label">No Cards</p>
+        </div>
+
+        <card class="card" *ngFor="let card of cards" (changes)="changeCard($event)" cdkDrag [cdkDragData]="{card: card}" cardId={{card.id}} [category]=card.category [description]=card.description [label] = card.label ></card>
+        <add-card  #search *ngIf="showAddTaskCard" (add)="addCard($event)" [submit]="submitNewTaskCard" ></add-card>
+    </div>
+
+    <button (click)="showAddTask()" class = "add-card-btn" mat-flat-button color="primary" >Add Card</button>
+
+</div>

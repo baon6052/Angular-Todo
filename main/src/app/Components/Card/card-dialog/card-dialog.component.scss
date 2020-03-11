@@ -1,0 +1,64 @@
+.task-text-area-field .mat-form-field-infix {
+  padding: 1em 1em 1em 1em;
+  border: 0;
+}
+
+.mat-button {
+  min-width: 3em;
+  padding: 0.2em;
+}
+
+.action-buttons {
+  width: 17em;
+}
+
+.task-text-area-field .mat-form-field-wrapper {
+  padding: 0;
+}
+
+.description-textarea {
+  font-family: "Poppins";
+}
+
+.task-text-area-field {
+  width: 100%;
+  background: rgba(#f2f3f5, 1);
+  margin-bottom: 0.7em;
+  border-radius: 4px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2em;
+}
+
+.title {
+  float: left;
+  margin: 0;
+  font-weight: 500;
+  font-family: "Poppins";
+  height: 100%;
+  margin-top: 0.3em;
+}
+
+.fill {
+  flex: 1 1 auto;
+}
+
+.delete-btn {
+  background-color: rgba($color: #c62828, $alpha: 1);
+  color: white;
+}
+
+.save-btn {
+  color: white;
+  width: 48%;
+  height: 2.7em;
+}
+
+.cancel-btn {
+  background-color: rgba($color: #c1c4c7, $alpha: 1);
+  width: 48%;
+  height: 2.7em;
+}

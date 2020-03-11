@@ -1,0 +1,22 @@
+.container {
+  width: 100%;
+}
+
+.new-task-text-area-field {
+  width: 100%;
+}
+
+.new-task-text-area-field .mat-form-field-infix {
+  border: 0;
+}
+
+.new-task-text-area-field .mat-input-element {
+  background-color: white;
+  width: 100%;
+  border-radius: 2px;
+  box-shadow: 2px 2px 3px #00000017;
+  font-family: "Poppins";
+
+  padding: 1.1em;
+  box-sizing: border-box;
+}

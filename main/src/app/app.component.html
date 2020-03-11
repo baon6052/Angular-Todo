@@ -1,0 +1,6 @@
+<div class="column_container" cdkDropListGroup >
+  <column (amendedTask)="editTask($event)"  [taskIDs] = "taskIDs" class="column-todo" category = "ToDo" name="ToDo" [drop] = drop [cards]=toDoCards></column>
+  <column (amendedTask)="editTask($event)" [taskIDs] = "taskIDs" class="column-doing" category = "Doing" name="Doing" [drop] = drop [cards] = doingCards></column>
+  <column (amendedTask)="editTask($event)" [taskIDs] = "taskIDs" class="column-done"category = "Done" name="Done" [drop] = drop [cards] = doneCards></column>
+</div>
+

@@ -1,0 +1,70 @@
+@import "../../../styles/resolutions.scss";
+
+.column {
+  display: flex;
+  flex-direction: column;
+
+  margin: 50px;
+  padding: 25px;
+
+  border-radius: 5px;
+  background: rgba(#f2f3f5, 1);
+
+  @media only screen and (max-width: $mobile) {
+    margin: 10px;
+  }
+
+  .column-title {
+    font-size: 20px;
+    font-weight: 800;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: rgba($color: #9ba2ab, $alpha: 1);
+  }
+}
+
+.card-container {
+  display: inline-block;
+  min-height: 5em;
+  padding: 1em 0 1em 0;
+  margin-bottom: 1em;
+  padding: 1em;
+
+  &.cdk-drop-list-dragging {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+  }
+
+  &.highlighted {
+    border: 1px solid #c6c7c6;
+    border-style: dashed;
+    border-radius: 4px;
+  }
+
+  & > * {
+    margin-bottom: 1em;
+  }
+}
+
+.no-task-icon {
+  height: 3.5em;
+}
+
+.no-tasks-label {
+  margin: 0.1em 0 0 0;
+}
+
+.no-cards-filler {
+  text-align: center;
+}
+
+.card {
+  padding: 0 !important;
+}
+
+.add-card-btn {
+  color: white;
+  font-weight: 500;
+  font-size: large;
+  height: 2.5em;
+}

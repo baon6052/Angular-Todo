@@ -1,0 +1,33 @@
+@import "../styles/resolutions.scss";
+
+.column_container {
+  display: flex;
+  flex-grow: 1;
+  padding: 3em 100px 0 100px;
+  justify-content: space-between;
+
+  @media only screen and (max-width: $mobile) {
+    flex-direction: column;
+    padding: 0.5em;
+  }
+
+  & > * {
+    margin-right: 1em;
+
+    @media only screen and (max-width: $mobile) {
+      margin-right: 0;
+      margin-bottom: 1em;
+    }
+  }
+
+  * {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+}
+
+::ng-deep #toast-container > .toast-success {
+  background-image: url("../assets/icons/party-popper_1f389.png") !important;
+}

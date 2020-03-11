@@ -1,0 +1,22 @@
+<div class="container">
+    <div class = "header">
+        <h2 class= "title"mat-dialog-title>Edit Task</h2>
+        <span class="fill"></span>
+        <button class="delete-btn" mat-button mat-dialog-close (click)="delete()"><mat-icon aria-hidden="false" aria-label="delete icon">delete</mat-icon></button>
+    </div>
+
+    <mat-dialog-content>
+
+        <form >
+            <mat-form-field class="task-text-area-field" appearance="none">
+                <textarea (keyup.enter)="save()"  (keydown.enter)="onKeydown($event)" cdkFocusInitial class="description-textarea"  matInput [(ngModel)]="data.description" name="description" cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="2" cdkAutosizeMaxRows="5" placeholder="Task Description"></textarea>
+            </mat-form-field>
+        </form>
+
+    </mat-dialog-content>
+
+    <mat-dialog-actions class="action-buttons">
+        <button class = "save-btn" mat-flat-button mat-dialog-close  color="primary" (click) = "save()" >Save Changes</button>
+        <button class = "cancel-btn" mat-flat-button mat-dialog-close (click)="cancel()" >Cancel Changes</button>
+    </mat-dialog-actions>
+</div>

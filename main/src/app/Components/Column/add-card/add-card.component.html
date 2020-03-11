@@ -1,0 +1,7 @@
+<div class="container" >
+    <form (ngSubmit)="addCard()">
+        <mat-form-field class="new-task-text-area-field" appearance="none">
+            <textarea #search [(ngModel)]="task_description" name="description" class="new-task-textarea" (keyup.enter)="addCard()"  (keydown.enter)="onKeydown($event)" matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="3" cdkAutosizeMaxRows="5" ></textarea>
+        </mat-form-field>
+    </form>
+</div>
